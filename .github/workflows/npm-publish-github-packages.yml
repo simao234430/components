@@ -29,9 +29,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://npm.pkg.github.com/
+          registry-url: https://registry.npmjs.org/
           scope: "@siamo234430"
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: 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

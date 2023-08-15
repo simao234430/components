@@ -1,6 +1,6 @@
 {
   "name": "@simao234430/components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react components libaray",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,6 @@
     "vite": "^4.4.9"
   },
   "publishConfig": {
-    "@simao234430:registry": "https://npm.pkg.github.com"
+    "@simao234430:registry": "https://registry.npmjs.org/"
   }
 }
