@@ -1,14 +1,15 @@
 /* eslint-disable react/display-name */
-import React from "react";
+import React, { Children } from "react";
 
-import "./Button.css";
-
-export interface ButtonProps extends React.ComponentProps<"button"> {
- kind?: "primary" | "secondary";
+// import "./Button.css";
+export const Button: FC<{className?: string | string[];}> = ({children}) => {
+ 
+  
+return (
+<button
+  style={{color:'red'}}
+>
+ {children}
+</button>
+)
 }
-
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
- ({ kind = "primary", ...props }, ref) => {
-   return <button data-button={`kind:${kind}`} ref={ref} {...props} />;
- },
-);
